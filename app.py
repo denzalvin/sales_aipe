@@ -13,8 +13,8 @@ import os
 import time
 
 # Initialize LLM and search tools
-llm = ChatGroq(api_key=st.secrets["groq_api_key"])
-search = TavilySearchResults(api_key=st.secrets["tavily_api_key"], max_results=2)
+llm = ChatGroq(api_key=st.secrets["GROQ_API_KEY"])
+search = TavilySearchResults(api_key=st.secrets["TAVILY_API_KEY"], max_results=2)
 parser = StrOutputParser()
 
 # define a function to set up session logging
@@ -139,7 +139,7 @@ def generate_insights(inputs, temperature, max_tokens):
     * Anticipate potential objections and provide concise, effective counterarguments for each.
     * Identify the most effective sales channels for reaching the target customer and explain the rationale for each.
     Sample Sales Pitch
-    * Generate a sample sales pitch outline incorporating the insights from the above analysis, ensure the sales pitch is:
+    * Generate a sample sales pitch paragraph incorporating the insights from the above analysis, ensure the sales pitch is:
         - Attention-grabbing
         - Solution presentation
         - Product highlights and benefits
@@ -203,8 +203,8 @@ def main():
 
     # Initialize LLM and search tools
     global llm, search
-    llm = ChatGroq(api_key=st.secrets["groq_api_key"])
-    search = TavilySearchResults(api_key=st.secrets["tavily_api_key"], max_results=2)
+    llm = ChatGroq(api_key=st.secrets["GROQ_API_KEY"])
+    search = TavilySearchResults(api_key=st.secrets["TAVILY_API_KEY"], max_results=2)
 
     # Add a success message container that can be conditionally displayed
     reset_success_placeholder = st.empty()
