@@ -144,8 +144,6 @@ def generate_insights(inputs, temperature, max_tokens):
         - Solution presentation
         - Product highlights and benefits
         - Call to action
-    Social Media Content
-    * Generate 2 sample social media posts that highlight key product benefits, address customer pain points, and include relevant hashtags.
     """
 
     try:
