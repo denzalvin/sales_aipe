@@ -228,14 +228,21 @@ def main():
     # Streamlit form
     with st.form("company_info", clear_on_submit=True):
         # Form fields
-        product_name = st.text_input("Product Name:")
-        company_url = st.text_input("Company URL:")
-        product_category = st.text_input("Product Category:")
-        competitors = st.text_input("Competitors (comma-separated URLs):")
-        value_proposition = st.text_area("Value Proposition:")
-        target_customer = st.text_input("Target Customer:")
+        product_name = st.text_input("Product Name:",
+                                     placeholder="Enter the product you are selling")
+        company_url = st.text_input("Company URL:",
+                                    placeholder="Enter the URL of the company you are targeting ")
+        product_category = st.text_input("Product Category:",
+                                         placeholder="Describe the product category (e.g., 'Computers', 'Cloud Data Platform')")
+        competitors = st.text_input("Competitors (comma-separated URLs):",
+                                    placeholder="Enter URLs of competitors, separated by commas")
+        value_proposition = st.text_area("Value Proposition:",
+                                         placeholder="Enter a brief sentence summarizing the product's value")
+        target_customer = st.text_input("Target Customer:",
+                                        placeholder="Enter the name of the person or the general group you are trying to sell to")
         # Upload file
-        uploaded_file = st.file_uploader("Upload Product Overview (optional):", type=["pdf", "docx"])
+        uploaded_file = st.file_uploader("Upload Product Overview (optional):", type=["pdf", "docx"]
+                                         ,  help="Upload a product overview sheet or deck for more detailed insights.")
 
         # Form columns for buttons and layout
         col1, col2 = st.columns(2)
