@@ -1,0 +1,19 @@
+2024-12-12 10:20:00,721 - INFO - Application started
+2024-12-12 10:20:00,727 - INFO - Application session ended
+2024-12-12 10:20:18,153 - INFO - Application started
+2024-12-12 10:20:18,159 - INFO - User submitted form with the following inputs:
+2024-12-12 10:20:18,160 - INFO - Product Name: dell
+2024-12-12 10:20:18,160 - INFO - Company URL: www.dell.com
+2024-12-12 10:20:18,160 - INFO - Product Category: computers
+2024-12-12 10:20:18,160 - INFO - Competitors: www.apple.com
+2024-12-12 10:20:18,160 - INFO - Value Proposition: dell is a gaming computer
+2024-12-12 10:20:18,160 - INFO - Target Customer: gamers
+2024-12-12 10:20:20,558 - INFO - Successfully scraped website: www.dell.com
+2024-12-12 10:20:22,927 - INFO - Successfully scraped website: www.apple.com
+2024-12-12 10:20:25,737 - INFO - Insights generated and stored in session state
+2024-12-12 10:20:25,741 - ERROR - Error generating PDF: 'latin-1' codec can't encode character '\U0001f680' in position 1210: ordinal not in range(256)
+2024-12-12 10:20:25,742 - INFO - Application session ended
+2024-12-12 10:28:05,714 - INFO - Application started
+2024-12-12 10:28:05,725 - ERROR - Error generating PDF: 'latin-1' codec can't encode character '\U0001f680' in position 1210: ordinal not in range(256)
+2024-12-12 10:28:05,726 - INFO - Application session ended
+2024-12-12 10:28:16,105 - INFO - Application started

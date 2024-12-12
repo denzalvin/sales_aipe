@@ -1,0 +1,8 @@
+streamlit
+langchain
+langchain-groq
+langchain-community
+fpdf
+requests
+PyPDF2
+python-docx
